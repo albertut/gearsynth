@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="utf-8"?>
+<candidate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <recipe>
+    <option>
+      <optionNumber>0</optionNumber>
+      <ruleSetIndex>0</ruleSetIndex>
+      <ruleNumber>1</ruleNumber>
+      <location>
+        <globalLabels />
+        <globalVariables />
+        <nodes>
+          <node>
+            <shapekey>rectangleNode.-657931.70.20</shapekey>
+            <name>Shaft0</name>
+            <localLabels>
+              <string>shaft</string>
+              <string>seed</string>
+              <string>one</string>
+            </localLabels>
+            <localVariables>
+              <double>100</double>
+              <double>NaN</double>
+              <double>NaN</double>
+              <double>0</double>
+              <double>0</double>
+              <double>0</double>
+              <double>0</double>
+              <double>0</double>
+              <double>0</double>
+            </localVariables>
+            <x>80</x>
+            <y>73</y>
+            <z>0</z>
+          </node>
+        </nodes>
+        <arcs />
+      </location>
+      <parameters />
+    </option>
+    <option>
+      <optionNumber>0</optionNumber>
+      <ruleSetIndex>0</ruleSetIndex>
+      <ruleNumber>3</ruleNumber>
+      <location>
+        <globalLabels />
+        <globalVariables />
+        <nodes>
+          <node>
+            <shapekey>rectangleNode.-657931.70.20</shapekey>
+            <name>Shaft0</name>
+            <localLabels>
+              <string>shaft</string>
+              <string>seed</string>
+            </localLabels>
+            <localVariables>
+              <double>100</double>
+              <double>NaN</double>
+              <double>NaN</double>
+              <double>0</double>
+              <double>0</double>
+              <double>0</double>
+              <double>0</double>
+              <double>0</double>
+              <double>0</double>
+            </localVariables>
+            <x>80</x>
+            <y>73</y>
+            <z>0</z>
+          </node>
+          <node>
+            <shapekey>rectangleNode.-1.99.38</shapekey>
+            <name>Gear</name>
+            <localLabels>
+              <string>gear</string>
+              <string>first</string>
+              <string>typeA</string>
+            </localLabels>
+            <localVariables>
+              <double>3000</double>
+              <double>6000</double>
+              <double>0.04</double>
+              <double>0</double>
+              <double>0</double>
+              <double>0</double>
+              <double>0</double>
+              <double>0</double>
+              <double>0</double>
+            </localVariables>
+            <x>71.251876831054688</x>
+            <y>139.52392578125</y>
+            <z>0</z>
+          </node>
+          <node>
+            <shapekey>largeCircleNode.-1.30.30</shapekey>
+            <name>Bearing2</name>
+            <localLabels />
+            <localVariables />
+            <x>285.1861572265625</x>
+            <y>36.262237548828125</y>
+            <z>0</z>
+          </node>
+          <node>
+            <shapekey>largeCircleNode.-1.30.30</shapekey>
+            <name>Bearing1</name>
+            <localLabels />
+            <localVariables />
+            <x>275.096435546875</x>
+            <y>241.79890441894531</y>
+            <z>0</z>
+          </node>
+        </nodes>
+        <arcs>
+          <arc>
+            <toConnector>0</toConnector>
+            <fromConnector>1</fromConnector>
+            <styleKey>Straight.-16777216.1.0</styleKey>
+            <name>[Not_set]1</name>
+            <localLabels />
+            <localVariables />
+            <From>Shaft0</From>
+            <To>Bearing2</To>
+            <directed>true</directed>
+            <doublyDirected>false</doublyDirected>
+          </arc>
+          <arc>
+            <toConnector>0</toConnector>
+            <fromConnector>0</fromConnector>
+            <styleKey>Straight.-16777216.1.0</styleKey>
+            <name>[Not_set]0</name>
+            <localLabels />
+            <localVariables />
+            <From>Shaft0</From>
+            <To>Bearing1</To>
+            <directed>true</directed>
+            <doublyDirected>false</doublyDirected>
+          </arc>
+          <arc>
+            <toConnector>3</toConnector>
+            <fromConnector>2</fromConnector>
+            <styleKey>Straight.-16777216.1.0</styleKey>
+            <name>[Not_set]2</name>
+            <localLabels />
+            <localVariables />
+            <From>Shaft0</From>
+            <To>Gear</To>
+            <directed>true</directed>
+            <doublyDirected>false</doublyDirected>
+          </arc>
+        </arcs>
+      </location>
+      <parameters />
+    </option>
+    <option>
+      <optionNumber>5</optionNumber>
+      <ruleSetIndex>0</ruleSetIndex>
+      <ruleNumber>10</ruleNumber>
+      <location>
+        <globalLabels />
+        <globalVariables />
+        <nodes>
+          <node>
+            <shapekey>rectangleNode.-1.122.33</shapekey>
+            <name>Gear1</name>
+            <localLabels>
+              <string>gear</string>
+              <string>typeA</string>
+              <string>contact</string>
+            </localLabels>
+            <localVariables>
+              <double>3000</double>
+              <double>6000</double>
+              <double>0.04</double>
+              <double>1.8409537692319467</double>
+              <double>-0.781594024766495</double>
+              <double>0</double>
+              <double>0</double>
+              <double>0</double>
+              <double>1</double>
+            </localVariables>
+            <x>26.014892578125</x>
+            <y>221.004638671875</y>
+            <z>0</z>
+          </node>
+          <node>
+            <shapekey>rectangleNode.-1.99.38</shapekey>
+            <name>Gear</name>
+            <localLabels>
+              <string>gear</string>
+              <string>first</string>
+              <string>typeA</string>
+            </localLabels>
+            <localVariables>
+              <double>3000</double>
+              <double>6000</double>
+              <double>0.04</double>
+              <double>0</double>
+              <double>0</double>
+              <double>0</double>
+              <double>0</double>
+              <double>0</double>
+              <double>1</double>
+            </localVariables>
+            <x>71.251876831054688</x>
+            <y>139.52392578125</y>
+            <z>0</z>
+          </node>
+        </nodes>
+        <arcs>
+          <arc>
+            <toConnector>0</toConnector>
+            <fromConnector>1</fromConnector>
+            <styleKey>Straight.-16777216.1.0</styleKey>
+            <name>[Not_set]3</name>
+            <localLabels />
+            <localVariables />
+            <From>Gear</From>
+            <To>Gear1</To>
+            <directed>true</directed>
+            <doublyDirected>false</doublyDirected>
+          </arc>
+        </arcs>
+      </location>
+      <parameters />
+    </option>
+  </recipe>
+  <performanceParams>
+    <double>1.3721099356549766</double>
+    <double>0.010841657847339398</double>
+    <double>0.024562757203889164</double>
+  </performanceParams>
+  <activeRuleSetIndex>0</activeRuleSetIndex>
+  <age>0</age>
+  <GenerationStatus>
+    <GenerationStatuses>Unspecified</GenerationStatuses>
+  </GenerationStatus>
+  <graph>
+    <name>shaftseed</name>
+    <globalLabels />
+    <globalVariables />
+    <nodes>
+      <node>
+        <shapekey>rectangleNode.-1.99.38</shapekey>
+        <name>Gear</name>
+        <localLabels>
+          <string>gear</string>
+          <string>first</string>
+          <string>typeA</string>
+        </localLabels>
+        <localVariables>
+          <double>3000</double>
+          <double>6000</double>
+          <double>0.04</double>
+          <double>0</double>
+          <double>0</double>
+          <double>0</double>
+          <double>0</double>
+          <double>0</double>
+          <double>1</double>
+        </localVariables>
+        <x>71.251876831054688</x>
+        <y>139.52392578125</y>
+        <z>0</z>
+      </node>
+      <node>
+        <shapekey>rectangleNode.-1.122.33</shapekey>
+        <name>Gear1</name>
+        <localLabels>
+          <string>gear</string>
+          <string>typeA</string>
+          <string>contact</string>
+        </localLabels>
+        <localVariables>
+          <double>3000</double>
+          <double>6000</double>
+          <double>0.04</double>
+          <double>1.8409537692319467</double>
+          <double>-0.781594024766495</double>
+          <double>0</double>
+          <double>0</double>
+          <double>0</double>
+          <double>1</double>
+        </localVariables>
+        <x>26.014892578125</x>
+        <y>221.004638671875</y>
+        <z>0</z>
+      </node>
+      <node>
+        <shapekey>rectangleNode.-1.97.39</shapekey>
+        <name>Gear14</name>
+        <localLabels>
+          <string>gear</string>
+          <string>typeA</string>
+          <string>common</string>
+        </localLabels>
+        <localVariables>
+          <double>3000</double>
+          <double>6000</double>
+          <double>0.04</double>
+          <double>1.8409537692319467</double>
+          <double>-0.781594024766495</double>
+          <double>3.0000288910506328</double>
+          <double>0</double>
+          <double>0</double>
+          <double>1</double>
+        </localVariables>
+        <x>317.007568359375</x>
+        <y>134.99856567382813</y>
+        <z>0</z>
+      </node>
+      <node>
+        <shapekey>rectangleNode.-1.98.38</shapekey>
+        <name>Gear16</name>
+        <localLabels>
+          <string>gear</string>
+          <string>typeB</string>
+          <string>contact</string>
+          <string>new</string>
+        </localLabels>
+        <localVariables>
+          <double>50000</double>
+          <double>100000</double>
+          <double>0.283</double>
+          <double>2.9994186071600244</double>
+          <double>0.999861621407238</double>
+          <double>3.0000288910506328</double>
+          <double>0</double>
+          <double>0</double>
+          <double>1</double>
+        </localVariables>
+        <x>319</x>
+        <y>223</y>
+        <z>0</z>
+      </node>
+      <node>
+        <shapekey>rectangleNode.-657931.70.20</shapekey>
+        <name>Shaft0</name>
+        <localLabels>
+          <string>shaft</string>
+          <string>seed</string>
+        </localLabels>
+        <localVariables>
+          <double>100</double>
+          <double>NaN</double>
+          <double>NaN</double>
+          <double>2.9994186071600244</double>
+          <double>0.999861621407238</double>
+          <double>6.0000577821012655</double>
+          <double>0</double>
+          <double>0</double>
+          <double>1</double>
+        </localVariables>
+        <x>80</x>
+        <y>73</y>
+        <z>0</z>
+      </node>
+      <node>
+        <shapekey>largeCircleNode.-1.30.30</shapekey>
+        <name>Bearing25</name>
+        <localLabels />
+        <localVariables />
+        <x>285.1861572265625</x>
+        <y>36.262237548828125</y>
+        <z>0</z>
+      </node>
+      <node>
+        <shapekey>largeCircleNode.-1.30.30</shapekey>
+        <name>Bearing16</name>
+        <localLabels />
+        <localVariables />
+        <x>275.096435546875</x>
+        <y>241.79890441894531</y>
+        <z>0</z>
+      </node>
+      <node>
+        <shapekey>rectangleNode.-1.86.37</shapekey>
+        <name>Shaft</name>
+        <localLabels>
+          <string>shaft</string>
+          <string>speed</string>
+          <string>used</string>
+        </localLabels>
+        <localVariables>
+          <double>0</double>
+          <double>0</double>
+        </localVariables>
+        <x>197</x>
+        <y>134</y>
+        <z>0</z>
+      </node>
+      <node>
+        <shapekey>largeCircleNode.-1.30.30</shapekey>
+        <name>Bearing18</name>
+        <localLabels />
+        <localVariables />
+        <x>219.58238220214844</x>
+        <y>34.093826293945312</y>
+        <z>0</z>
+      </node>
+      <node>
+        <shapekey>largeCircleNode.-1.30.30</shapekey>
+        <name>Bearing29</name>
+        <localLabels />
+        <localVariables />
+        <x>219.63427734375</x>
+        <y>238.7965087890625</y>
+        <z>0</z>
+      </node>
+    </nodes>
+    <arcs>
+      <arc>
+        <toConnector>0</toConnector>
+        <fromConnector>0</fromConnector>
+        <styleKey>Straight.-16777216.1.0</styleKey>
+        <name>[Not_set]0</name>
+        <localLabels />
+        <localVariables />
+        <From>Shaft0</From>
+        <To>Bearing16</To>
+        <directed>true</directed>
+        <doublyDirected>false</doublyDirected>
+      </arc>
+      <arc>
+        <toConnector>0</toConnector>
+        <fromConnector>1</fromConnector>
+        <styleKey>Straight.-16777216.1.0</styleKey>
+        <name>[Not_set]1</name>
+        <localLabels />
+        <localVariables />
+        <From>Shaft0</From>
+        <To>Bearing25</To>
+        <directed>true</directed>
+        <doublyDirected>false</doublyDirected>
+      </arc>
+      <arc>
+        <toConnector>3</toConnector>
+        <fromConnector>2</fromConnector>
+        <styleKey>Straight.-16777216.1.0</styleKey>
+        <name>[Not_set]2</name>
+        <localLabels />
+        <localVariables />
+        <From>Shaft0</From>
+        <To>Gear</To>
+        <directed>true</directed>
+        <doublyDirected>false</doublyDirected>
+      </arc>
+      <arc>
+        <toConnector>0</toConnector>
+        <fromConnector>1</fromConnector>
+        <styleKey>Straight.-16777216.1.0</styleKey>
+        <name>[Not_set]3</name>
+        <localLabels />
+        <localVariables />
+        <From>Gear</From>
+        <To>Gear1</To>
+        <directed>true</directed>
+        <doublyDirected>false</doublyDirected>
+      </arc>
+      <arc>
+        <toConnector>2</toConnector>
+        <fromConnector>3</fromConnector>
+        <styleKey>Straight.-16777216.1.0</styleKey>
+        <name>a4</name>
+        <localLabels />
+        <localVariables />
+        <From>Gear1</From>
+        <To>Shaft</To>
+        <directed>true</directed>
+        <doublyDirected>false</doublyDirected>
+      </arc>
+      <arc>
+        <toConnector>0</toConnector>
+        <fromConnector>0</fromConnector>
+        <styleKey>Straight.-16777216.1.0</styleKey>
+        <name>a1</name>
+        <localLabels />
+        <localVariables />
+        <From>Shaft</From>
+        <To>Bearing29</To>
+        <directed>true</directed>
+        <doublyDirected>false</doublyDirected>
+      </arc>
+      <arc>
+        <toConnector>0</toConnector>
+        <fromConnector>1</fromConnector>
+        <styleKey>Straight.-16777216.1.0</styleKey>
+        <name>a2</name>
+        <localLabels />
+        <localVariables />
+        <From>Shaft</From>
+        <To>Bearing18</To>
+        <directed>true</directed>
+        <doublyDirected>false</doublyDirected>
+      </arc>
+      <arc>
+        <toConnector>2</toConnector>
+        <fromConnector>3</fromConnector>
+        <styleKey>Straight.-16777216.1.0</styleKey>
+        <name>a3</name>
+        <localLabels />
+        <localVariables />
+        <From>Shaft</From>
+        <To>Gear14</To>
+        <directed>true</directed>
+        <doublyDirected>false</doublyDirected>
+      </arc>
+      <arc>
+        <toConnector>0</toConnector>
+        <fromConnector>1</fromConnector>
+        <styleKey>Straight.-16777216.1.0</styleKey>
+        <name>[Not_set]8</name>
+        <localLabels />
+        <localVariables />
+        <From>Gear14</From>
+        <To>Gear16</To>
+        <directed>true</directed>
+        <doublyDirected>false</doublyDirected>
+      </arc>
+    </arcs>
+  </graph>
+</candidate>

@@ -1,0 +1,41 @@
+﻿body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: Cambria, "Palatino Linotype", Garamond, "Times New Roman";
+}
+#container {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: Cambria, "Palatino Linotype", Garamond, "Times New Roman";
+	left: 25px;
+	top: 10px;
+}
+#masthead {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: Cambria, "Palatino Linotype", Garamond, "Times New Roman";
+	background-image: url('../images/colorNodeMastheadBackground.png');
+	background-repeat: repeat;
+}
+#navigation {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: Cambria, "Palatino Linotype", Garamond, "Times New Roman";
+	font-size: large;
+}
+#content {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: Cambria, "Palatino Linotype", Garamond, "Times New Roman";
+}
+#footer {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: Cambria, "Palatino Linotype", Garamond, "Times New Roman";
+}

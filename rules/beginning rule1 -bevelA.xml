@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<grammarRule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <name>beginning rule1 -bevelA</name>
+  <spanning>false</spanning>
+  <induced>false</induced>
+  <negateLabels />
+  <containsAllGlobalLabels>false</containsAllGlobalLabels>
+  <embeddingRules />
+  <recognizeFunctions />
+  <applyFunctions />
+  <L>
+    <globalLabels />
+    <globalVariables />
+    <nodes>
+      <node xsi:type="ruleNode">
+        <shapekey>rectangleNode.-2715310.97.31</shapekey>
+        <name>Shaft0</name>
+        <localLabels>
+          <string>shaft</string>
+          <string>speed</string>
+          <string>seed</string>
+        </localLabels>
+        <localVariables />
+        <x>90</x>
+        <y>156</y>
+        <z>0</z>
+        <containsAllLocalLabels>true</containsAllLocalLabels>
+        <strictDegreeMatch>false</strictDegreeMatch>
+        <negateLabels />
+      </node>
+    </nodes>
+    <arcs />
+  </L>
+  <R>
+    <globalLabels />
+    <globalVariables />
+    <nodes>
+      <node xsi:type="ruleNode">
+        <shapekey>rectangleNode.-2715310.70.36</shapekey>
+        <name>Shaft0</name>
+        <localLabels>
+          <string>shaft</string>
+          <string>seed</string>
+          <string>one</string>
+        </localLabels>
+        <localVariables />
+        <x>246</x>
+        <y>148</y>
+        <z>0</z>
+        <containsAllLocalLabels>false</containsAllLocalLabels>
+        <strictDegreeMatch>false</strictDegreeMatch>
+        <negateLabels />
+      </node>
+      <node xsi:type="ruleNode">
+        <shapekey>rectangleNode.-1.99.38</shapekey>
+        <name>Gear</name>
+        <localLabels>
+          <string>gear</string>
+          <string>first</string>
+          <string>bevelA</string>
+          <string>one</string>
+        </localLabels>
+        <localVariables />
+        <x>71.251876831054688</x>
+        <y>137.52392578125</y>
+        <z>0</z>
+        <containsAllLocalLabels>false</containsAllLocalLabels>
+        <strictDegreeMatch>false</strictDegreeMatch>
+        <negateLabels />
+      </node>
+      <node xsi:type="ruleNode">
+        <shapekey>largeCircleNode.-1.30.30</shapekey>
+        <name>Bearing2</name>
+        <localLabels>
+          <string>b</string>
+        </localLabels>
+        <localVariables />
+        <x>258.1861572265625</x>
+        <y>205.26223754882813</y>
+        <z>0</z>
+        <containsAllLocalLabels>false</containsAllLocalLabels>
+        <strictDegreeMatch>false</strictDegreeMatch>
+        <negateLabels />
+      </node>
+      <node xsi:type="ruleNode">
+        <shapekey>largeCircleNode.-1.30.30</shapekey>
+        <name>Bearing1</name>
+        <localLabels>
+          <string>t</string>
+        </localLabels>
+        <localVariables />
+        <x>273.096435546875</x>
+        <y>79.798904418945312</y>
+        <z>0</z>
+        <containsAllLocalLabels>false</containsAllLocalLabels>
+        <strictDegreeMatch>false</strictDegreeMatch>
+        <negateLabels />
+      </node>
+    </nodes>
+    <arcs>
+      <arc xsi:type="ruleArc">
+        <toConnector>0</toConnector>
+        <fromConnector>0</fromConnector>
+        <styleKey>Straight.-16777216.1.0</styleKey>
+        <name>[Not_set]0</name>
+        <localLabels />
+        <localVariables />
+        <From>Shaft0</From>
+        <To>Bearing1</To>
+        <directed>true</directed>
+        <doublyDirected>false</doublyDirected>
+        <containsAllLocalLabels>false</containsAllLocalLabels>
+        <directionIsEqual>false</directionIsEqual>
+        <nullMeansNull>false</nullMeansNull>
+        <negateLabels />
+      </arc>
+      <arc xsi:type="ruleArc">
+        <toConnector>0</toConnector>
+        <fromConnector>1</fromConnector>
+        <styleKey>Straight.-16777216.1.0</styleKey>
+        <name>[Not_set]1</name>
+        <localLabels />
+        <localVariables />
+        <From>Shaft0</From>
+        <To>Bearing2</To>
+        <directed>true</directed>
+        <doublyDirected>false</doublyDirected>
+        <containsAllLocalLabels>false</containsAllLocalLabels>
+        <directionIsEqual>false</directionIsEqual>
+        <nullMeansNull>false</nullMeansNull>
+        <negateLabels />
+      </arc>
+      <arc xsi:type="ruleArc">
+        <toConnector>3</toConnector>
+        <fromConnector>2</fromConnector>
+        <styleKey>Straight.-16777216.1.0</styleKey>
+        <name>[Not_set]2</name>
+        <localLabels />
+        <localVariables />
+        <From>Shaft0</From>
+        <To>Gear</To>
+        <directed>true</directed>
+        <doublyDirected>false</doublyDirected>
+        <containsAllLocalLabels>false</containsAllLocalLabels>
+        <directionIsEqual>false</directionIsEqual>
+        <nullMeansNull>false</nullMeansNull>
+        <negateLabels />
+      </arc>
+    </arcs>
+  </R>
+</grammarRule>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<grammarRule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <name>singleidler -typeA</name>
+  <spanning>false</spanning>
+  <induced>false</induced>
+  <negateLabels />
+  <containsAllGlobalLabels>false</containsAllGlobalLabels>
+  <embeddingRules />
+  <recognizeFunctions />
+  <applyFunctions />
+  <L>
+    <globalLabels />
+    <globalVariables />
+    <nodes>
+      <node xsi:type="ruleNode">
+        <shapekey>rectangleNode.-2715310.101.40</shapekey>
+        <name>Gear</name>
+        <localLabels>
+          <string>gear</string>
+          <string>new</string>
+        </localLabels>
+        <localVariables />
+        <x>66</x>
+        <y>116</y>
+        <z>0</z>
+        <containsAllLocalLabels>false</containsAllLocalLabels>
+        <strictDegreeMatch>false</strictDegreeMatch>
+        <negateLabels />
+      </node>
+    </nodes>
+    <arcs />
+  </L>
+  <R>
+    <globalLabels />
+    <globalVariables />
+    <nodes>
+      <node xsi:type="ruleNode">
+        <shapekey>rectangleNode.-2715310.91.35</shapekey>
+        <name>Gear</name>
+        <localLabels>
+          <string>gear</string>
+        </localLabels>
+        <localVariables />
+        <x>45</x>
+        <y>124</y>
+        <z>0</z>
+        <containsAllLocalLabels>false</containsAllLocalLabels>
+        <strictDegreeMatch>false</strictDegreeMatch>
+        <negateLabels />
+      </node>
+      <node xsi:type="ruleNode">
+        <shapekey>rectangleNode.-1.84.30</shapekey>
+        <name>Shaft</name>
+        <localLabels>
+          <string>shaft</string>
+          <string>speed</string>
+        </localLabels>
+        <localVariables>
+          <double>0</double>
+        </localVariables>
+        <x>182.00022888183594</x>
+        <y>127</y>
+        <z>0</z>
+        <containsAllLocalLabels>false</containsAllLocalLabels>
+        <strictDegreeMatch>false</strictDegreeMatch>
+        <negateLabels />
+      </node>
+      <node xsi:type="ruleNode">
+        <shapekey>rectangleNode.-1.91.36</shapekey>
+        <name>Gear1</name>
+        <localLabels>
+          <string>gear</string>
+          <string>typeA</string>
+          <string>contact</string>
+          <string>new</string>
+        </localLabels>
+        <localVariables />
+        <x>45.997543334960938</x>
+        <y>194.99697875976563</y>
+        <z>0</z>
+        <containsAllLocalLabels>false</containsAllLocalLabels>
+        <strictDegreeMatch>false</strictDegreeMatch>
+        <negateLabels />
+      </node>
+    </nodes>
+    <arcs>
+      <arc xsi:type="ruleArc">
+        <toConnector>0</toConnector>
+        <fromConnector>1</fromConnector>
+        <styleKey>Straight.-16777216.1.0</styleKey>
+        <name>a2</name>
+        <localLabels />
+        <localVariables />
+        <From>Gear</From>
+        <To>Gear1</To>
+        <directed>true</directed>
+        <doublyDirected>false</doublyDirected>
+        <containsAllLocalLabels>false</containsAllLocalLabels>
+        <directionIsEqual>false</directionIsEqual>
+        <nullMeansNull>false</nullMeansNull>
+        <negateLabels />
+      </arc>
+      <arc xsi:type="ruleArc">
+        <toConnector>2</toConnector>
+        <fromConnector>3</fromConnector>
+        <styleKey>Straight.-16777216.1.0</styleKey>
+        <name>a1</name>
+        <localLabels />
+        <localVariables />
+        <From>Gear</From>
+        <To>Shaft</To>
+        <directed>true</directed>
+        <doublyDirected>false</doublyDirected>
+        <containsAllLocalLabels>false</containsAllLocalLabels>
+        <directionIsEqual>false</directionIsEqual>
+        <nullMeansNull>false</nullMeansNull>
+        <negateLabels />
+      </arc>
+    </arcs>
+  </R>
+</grammarRule>

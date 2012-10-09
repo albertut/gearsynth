@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Grammar Rule Recognition</title><style type="text/css">
+.style67 {
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+}
+.style2 {
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+}
+.style3 {
+	margin-top: 0;
+	margin-bottom: 1px;
+	font-family: "Lucida Console";
+	font-weight: normal;
+	font-style: italic;
+	color: #757575;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-top-style: solid;
+	border-top-width: 1px;
+}
+.style4 {
+	font-weight: normal;
+	color: #000000;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-top-style: solid;
+	border-top-width: 1px;
+}
+.style5 {
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+}
+.style6 {
+	font-weight: normal;
+	color: #000000;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-top-width: 1px;
+}
+.style7 {
+	margin-top: 0;
+	margin-bottom: 1px;
+	font-family: "Lucida Console";
+	font-weight: normal;
+	font-style: italic;
+	color: #757575;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+}
+.style8 {
+	border-style: solid;
+	border-width: 1px;
+	font-weight: normal;
+	color: #000000;
+}
+.style9 {
+	font-weight: normal;
+	color: #000000;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+}
+</style>
+<link href="styles/graphSynthStyle.css" rel="stylesheet" type="text/css" /><style type="text/css"></style>
+</head><body><div id="container"><div id="masthead"><a  style="border-width:0" href="http://www.engr.utexas.edu/"><img alt="UT Austin and the College of Engineering" src="images/UTCOEemblem.jpg" style="float: right" class="UT_COE_emblem" /></a> <h1>GraphSynth</h1><h5>Version 1.7</h5><h6>Software for Creating Graph Grammars<br />created by the <a href="http://www.me.utexas.edu/~adl/">Automated Design Lab</a><br />in the <a href="http://www.me.utexas.edu/">Mechanical Engineering Department</a><br />under the direction of <a href="mailto:mc1@mail.utexas.edu?subject=a question/comment about GraphSynth">Dr. Matt Campbell</a><br /></h6></div><div id="navigation"><ul><li><a href="index.htm">Home</a></li><li><a href="gettingStarted.htm">Getting Started</a></li><li><a href="introMethod.htm">Methodology Overview</a></li><li><a href="graphs.htm">Graph Basics</a></li><li><a href="grammars.htm">Grammar Basics</a></li><li><a href="rule_recognition.htm">Grammars: Recognition</a></li><li><a href="rule_application.htm">Grammars: Application</a></li><li><a href="ruleSets.htm">Grammars: Rulesets</a></li><li><a href="generation.htm">Generation</a></li><li><a href="searchProcess.htm">Search Process</a></li><li><a href="navigating.htm">Navigating GraphSynth</a></li><li><a href="examples.htm">Examples</a></li><li><a href="download.htm">Download</a></li></ul><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p></div><div id="content"><h2>Grammar Rule Recognition</h2><p>The act of recognizing when a rule can be applied is to identify a subgraph within the host that matches with the graph depicted as the left hand side of the rule (as shown in Figure 1). Within a label rich system, the number of possible subgraphs reduces drastically. The labels within both the graph L and graph H in Figure 1 constrain the recognition to a single subgraph (node 2 and arc 10). However, if all of the labels are removed in L, then there are 16 possible subgraphs. The corollary that is adopted here is that the act of matching a node or arc to one in the host is that the labels must be a subset. In the case of Figure 1, the subgraph is recognized even though the matching location contains more labels than L.</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p class="figure" style="left: 181px; top: 460px; width: 486px"><img alt="example recognition of a L recognized in a host" src="images/ruleRecognitionBasic.png" width="489" height="303" /><br />Figure 1: The recognition requires that we find the subgraph of the left hand side (a) of the rule within the host (b). In this example, nodes and arcs are referred to by the corresponding number, and labels for nodes and arcs are shown in parentheses. </p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;<br />&nbsp; </p><p>&nbsp;<br />&nbsp; </p><h3>Subgraph Booleans </h3><p>For creative systems, rules are likely constructed to model or contain particular heuristics or design rules. A label rich recognition like this can be interpreted as, “if a state of the design contains all the characteristics of a particular rule, then that rule is applicable.” However, there are cases when rules may not be easily represented by subsets of labels. It is for this reason that we additionally equip each node and arc within the left hand side graphs with a Boolean, <span class="codeInText">containsAllLocalLabels</span>. If this Boolean is set to true then we enforce that the set of labels must be identical in both rule and host. In this case, the rule shown in Figure 1 will not be recognized within the host. If all the labels were removed in the L graph, we would find only one location (node 5 and arc 14) as opposed to the 16 discussed above.</p><p>It is clear from this example that by setting the label matching as “equal to” as opposed to subset, the number of recognized location reduces significantly. In addition to this restriction, there are number of additional Booleans that can be implemented to better capture the intended rule recognitions. For each node, one can limit the number of arcs that are connected to it. In our implementation, a Boolean called <span class="codeInText">strictDegreeMatch </span>is created. This essentially means that a node in a rule’s L will match only with a node in the host that has the same number of arcs connecting to it. In the preceding example of Figure 1 with the labels removed from L and the <span class="codeInText">strictDegreeMatch </span>set to true, there are only two locations that are properly matched (node 1 and arc 8, and node 6 and arc 12).</p><p>For the arc we can provide an additional criteria on the direction of the arc with the Boolean, <span class="codeInText">directionIsEqual</span>. When this is set to false, we assume that undirected arcs can be matched with directed arcs or doubly-directed arcs in the host. When set to true, the Boolean limits matching undirected only with undirected, directed only with other directed with the same sense, and doubly-directed with doubly-directed. An additional Boolean related to arcs deals with handling the dangling nature of arcs. The L in Figure 1, only includes a single node and arc; however, many approaches to graph theory disallow arcs from having an unspecified or dangling end. In the development of the methodology and implementation presented here, both cases are handled. In the examples that have played out from Figure 3, the missing node at the bottom of L is treated as a wildcard that matches with any node regardless of its characteristics. If one creates a rule that seeks to match an arc to a similar dangling arcs in the host, then the Boolean, <span class="codeInText">nullMeansNull </span>can be set to true for the arc. This prevent this from matching with arcs that are defined between two nodes. In the example, this Boolean set to true would again prevent the rule from recognizing a legitimate subgraph with the host.</p><p>Finally, the subgraph recognition ambiguities can result in the graph-wide Booleans, <span class="codeInText">induced </span>and <span class="codeInText">spanning</span>.. A spanning subgraph is one that contains all the nodes of the host graph but not necessarily all the arcs. Clearly, this results in no recognition in the previous example. When the induced Boolean is set to true the subgraph is required to be an induced subgraph within the host. This means that L must contain all arcs that exist between the recognized nodes in the host. These subgraph Booleans are commonly accepted as fundamental to graph theory. Graphs can also have labels similar to those in the nodes and arcs. As a result, we create a final Boolean that relates to the global labels being a proper subset or equivalent to those in the host. A final summary of these subgraph Booleans are shown in Table 1. While some of these have existed before in past graph theory literature, we have expanded the set to include all possible ambiguities in what is meant by subgraph. Since a graph can be defined in category theory as an interacting set of sets (e.g. set of labels, sets of arcs, and sets of nodes) the Booleans allow us to independently define how the subsets are determined for each of these components. </p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p class="figure" style="left: 172px; top: 2089px; width: 504px">Table 1: A summary of the subgraph Booleans <br /><table border="0" cellspacing="0" cellpadding="0"><tr><td class="style67"><p>Subgraph Boolean</p></td><td class="style2"><p>Applies to what aspect of rule</p></td><td class="style5"><p>when TRUE…</p></td></tr><tr><td class="style7"><p>spanning</p></td><td class="style8"><p>graph</p></td><td class="style9"><p>host contains an equivalent set of nodes as L</p></td></tr><tr><td class="style7"><p>induced</p></td><td class="style8"><p>graph</p></td><td class="style9"><p>host contains an equivalent set of arcs as L for the recognized set of nodes</p></td></tr><tr><td class="style7"><p>containsAllGlobalLabels</p></td><td class="style8"><p>graph</p></td><td class="style9"><p>host contains an equivalent set of global labels as L</p></td></tr><tr><td class="style7"><p>strictDegreeMatch</p></td><td class="style8"><p>node</p></td><td class="style9"><p>host node contains an equivalent set of arcs connected to it as L node (nodes have same degree)</p></td></tr><tr><td class="style7"><p>containsAllLocalLabels</p></td><td class="style8"><p>node</p></td><td class="style9"><p>host node contains an equivalent set of labels as L node</p></td></tr><tr><td class="style7"><p>containsAllLocalLabels</p></td><td class="style8"><p>arc</p></td><td class="style9"><p>host arc contains an equivalent set of labels as L arc</p></td></tr><tr><td class="style7"><p>directionIsEqual</p></td><td class="style8"><p>arc</p></td><td class="style9"><p>host arc has equivalent direction characteristics as L arc</p></td></tr><tr><td class="style3"><p>nullMeansNull</p></td><td class="style4"><p>arc</p></td><td class="style6"><p>host arc must be equivalently unconnected at ends as the L arc</p></td></tr></table></p><p>&nbsp;</p><p>&nbsp;</p><h3>Recognition Procedure</h3><p>On the most general level this recognition takes two inputs: the L of a rule, and the host graph. What is expected as a result is a list of subgraphs where L is found in the host. For a particular rule and host, there may be no subgraph, one subgraph, or many subgraphs. These resulting subgraphs are often referred to as how L is mapped into the host. This becomes an important consideration for the <a href="file:///C:/Users/Matthew%20Campbell/Research/GraphSynth/graphsynth%20Help/GSHelp/rule_application.htm">application of a rule</a>.</p><p>The approach developed in our implementation is a recursive search starting with a single node in L. The first node in L is checked to see if it matches with each of the nodes in the host. For those in which it is a successful match, a modified depth-first-search (DFS) is invoked from each matching node within the host. As creators of the grammar rules, one can impact the efficiency of the recognition process by altering the order in which the nodes are presented. The computational structure for a graph stores the set of nodes as a list; by placing the most restrictive node (the node that is hardest to match) first in the list of nodes one can eliminate wasted search that would occur if a less restricted node is presented first. An example of this is shown in Figure 2. The node I in L is more restrictive than node III and the order of expansion is shown in Figure 2a and b. The depth-first-search proves to be a more efficient approach to recognition both in computational speed and memory.</p><p>An additional item to note in these mappings is that locations including the same nodes and arcs are found multiple times. This is because our recognize-choose-apply requires that we uniquely match each node and arc to one in the host. This becomes more apparent in the discussion of rule application since the rule essentially includes individual instructions for each of the elements matched to the L graph. </p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p class="figure" style="left: 176px; top: 3019px"><img alt="the order of how nodes and arcs are stored affects the recognition" src="images/ruleRecognitionOrder.png" width="660" height="268" /><br />Figure 2: An example for the procedure of recognition: a) an example rule, b) nodes ordered from most restrictive to least are more efficient as there are fewer opportunities to store and expand at each level of the depth first search, c) a poor ordering of nodes leads to twice as many candidate subgraphs being expanded before the same two are found (note: that the ordering is different in b to correspond to the order that they are presented). </p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p></div><div id="footer"><p><a href="index.htm">Home</a> | <a href="gettingStarted.htm">Getting Started</a> | <a href="introMethod.htm">Methodology Overview</a> | <a href="graphs.htm">Graph Basics</a> | <a href="grammars.htm">Grammar Basics</a> | <a href="rule_recognition.htm">Grammars: Recognition</a> | <a href="rule_application.htm">Grammars: Application</a> | <a href="ruleSets.htm">Grammars: Rulesets</a> | <a href="generation.htm">Generation</a> | <a href="searchProcess.htm">Search Process</a> | <a href="navigating.htm">Navigating GraphSynth</a> | <a href="examples.htm">Examples</a> | <a href="download.htm">Download</a></p></div><div class="bottomLegalities"><br /><br /><br />© 2007, the <a href="http://www.me.utexas.edu/~adl/">Automated Design Laboratory</a>,&nbsp; <a href="http://www.me.utexas.edu/">Mechanical Engineering Department</a> of the <a href="http://www.engr.utexas.edu/">College of Engineering</a> at the <a href="http://www.utexas.edu/">University of Texas at Austin</a>. <br />All rights reserved. This page was last updated on Wednesday, July 4, 2007 by the <a href="mailto:mc1@mail.utexas.edu">Dr. Matt Campbell</a>. </div></div></body></html>

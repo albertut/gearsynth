@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<designGraph xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <name>shaftseed</name>
+  <globalLabels />
+  <globalVariables />
+  <nodes>
+    <node>
+      <shapekey>8ED1469D-90B2-43ab-B000-4FF5C682F530</shapekey>
+      <screenX>80</screenX>
+      <screenY>73</screenY>
+      <name>Shaft0</name>
+      <localLabels>
+        <string>shaft</string>
+        <string>speed</string>
+        <string>seed</string>
+      </localLabels>
+      <localVariables>
+        <double>100</double>
+      </localVariables>
+    </node>
+  </nodes>
+  <arcs />
+</designGraph>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<designGraph xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <globalLabels />
+  <globalVariables />
+  <nodes>
+    <node>
+      <name>Gear</name>
+      <localLabels>
+        <string>gear</string>
+        <string>speed</string>
+        <string>radius</string>
+        <string>teeth</string>
+        <string>new</string>
+      </localLabels>
+      <localVariables />
+      <shapekey>8ED1469D-90B2-43ab-B000-4FF5C682F530</shapekey>
+      <screenX>156</screenX>
+      <screenY>163</screenY>
+    </node>
+  </nodes>
+  <arcs />
+</designGraph>

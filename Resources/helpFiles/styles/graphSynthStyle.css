@@ -1,0 +1,229 @@
+﻿@import url("layout.css");
+.bottomLegalities {
+	text-align: center;
+	font-size: xx-small;
+}
+body {
+	background-color: #f2f2f7;
+	background-image: url("../images/nodyBackground.png");
+	background-repeat: repeat;
+	background-attachment: scroll;
+}
+#container {
+	width: 700px;
+	margin: 10px auto;
+	position: absolute;
+}
+#masthead {
+	text-align: center;
+	width: 698px;
+	border-top: 1px solid #dcdcdc;
+	border-right: 1px solid #a9a9a9;
+	border-bottom: 1px solid #808080;
+	border-left: 1px solid #a9a9a9;
+	background-color: #ffffff;
+		background-image: url("../images/colorNodeMastheadBackground.png");
+}
+#navigation {
+	position: relative;
+	float: left;
+	width: 148px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-top: 1px solid #dcdcdc;
+	border-right: 1px solid #a9a9a9;
+	border-bottom: 1px solid #808080;
+	border-left: 1px solid #a9a9a9;
+	background-color: #fff;
+}
+#content {
+	float: left;
+	width: 518px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	padding: 10px;
+	border-top: 1px solid #dcdcdc;
+	border-right: 1px solid #a9a9a9;
+	border-bottom: 1px solid #808080;
+	border-left: 1px solid #a9a9a9;
+	background-color: #fff;
+
+}
+#footer {
+	text-align: center;
+	clear: both;
+	width: 698px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-top: 1px solid #dcdcdc;
+	border-right: 1px solid #a9a9a9;
+	border-bottom: 1px solid #808080;
+	border-left: 1px solid #a9a9a9;
+	background-color: #fefeff;
+}
+/* Masthead Styles */
+#masthead h1 {
+	padding: 10px;
+	color: #3d6c87;
+	text-align: right;
+	font-style: italic;
+	font-size: 36px;
+}
+#masthead h5 {
+	padding: inherit;
+	margin: 5px;
+	color: #3d6c87;
+	font-size: small;
+	text-align: right;
+	line-height: 13px;
+}
+
+#masthead h6 {
+	padding: inherit;
+	margin: 5px;
+	color: #3d6c87;
+	font-style: italic;
+	font-size: small;
+	font-weight: normal;
+	text-align: right;
+	line-height: 13px;
+}
+
+/* Navigation Styles */
+#navigation ul {
+	list-style-type: none;
+	width: 100%;
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+#navigation li {
+	display: block;
+	margin: 0;
+	padding: 0;
+	border: 1px solid #fff;
+	background-color: #fff;
+}
+#navigation a {
+	color: #3d6c87;
+	text-decoration: none;
+	display: block;
+	padding: 5px;
+	border: 1px solid #fff;
+	background-color: #fff;
+}
+#navigation a:hover {
+	color: #fff;
+	text-decoration: none;
+	border: 1px solid #5f8ea9;
+	background-color: #5f8ea9;
+}
+/* Content Styles */
+h6 {
+	color: #3d6c87;
+}
+h5 {
+	color: #3d6c87;
+}
+h4 {
+	color: #3d6c87;
+}
+h3 {
+	color: #3d6c87;
+}
+h2 {
+	color: #3d6c87;
+}
+#content h1 {
+	color: #3d6c87;
+}
+#content img {
+	border-width: inherit;
+	border-style: none;
+	border-color: #808080;
+	padding: 0px;
+}
+/* Footer Styles */
+#footer p {
+	color: #808080;
+	margin-top: 5px;
+}
+#footer a {
+	color: #5f8ea9;
+	text-decoration: underline;
+}
+#footer a:hover {
+	color: #33627d;
+	text-decoration: none;
+}
+a {
+	color: #5f8ea9;
+	text-decoration: underline;
+}
+a:hover {
+	color: #33627d;
+	text-decoration: underline;
+}
+.style_bold {
+	font-weight: bold;
+}
+.style_italic {
+	font-style: italic;
+}
+.codeSnippet {
+	margin-top: 0;
+	margin-bottom: 1px;
+	font-family: "Lucida Console";
+	padding-left: 30px;
+	font-size: 14px;
+}
+.inlineArialArrow {
+	font-family: Arial;
+}
+.codeInText {
+	margin-top: 0;
+	margin-bottom: 1px;
+	font-family: "Lucida Console";
+	font-weight: normal;
+	font-style: italic;
+	color: #757575;
+}
+.boldTealPseudoCode {
+	color: #008080;
+	font-weight: bold;
+}
+.blueCode {
+	color: #0000FF;
+}
+.tealCode {
+	color: #008080;
+}
+.brownCode {
+	color: #800000;
+}
+.UT_COE_emblem {
+	border-style: 0;
+	border-color: 0;
+	border-width: 0px;
+	padding: 0px;
+	margin: 0px 0px 0px 12px;
+}
+.unadornedtableText {
+	font-weight: normal;
+	color: #000000;
+}
+.figure {
+	font-family: Cambria, "Palatino Linotype", Garamond, "Times New Roman";
+	font-size: small;
+	font-weight: bold;
+	color: #FF0000;
+	padding: 1px;
+	margin: 1px;
+	z-index: 8;
+	position: absolute;
+	text-align: center;
+	background-color: #FFFFFF;
+	border: 3px solid #dcdcdc;
+	line-height: 15px;
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ruleSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <name>gearset</name>
+  <ruleFileNames>
+    <string>aftersgos.xml</string>
+    <string>beginning rule1.xml</string>
+    <string>beginning rule3.xml</string>
+    <string>gearshaftgear.xml</string>
+    <string>singleidler.xml</string>
+    <string>smallergearonshaft.xml</string>
+    <string>terminal rule.xml</string>
+  </ruleFileNames>
+  <triggerRuleNum>-1</triggerRuleNum>
+  <choiceMethod>Design</choiceMethod>
+  <interimCandidates>Unspecified</interimCandidates>
+  <finalCandidates>Unspecified</finalCandidates>
+  <ruleSetIndex>0</ruleSetIndex>
+  <recognizeSourceFiles>
+    <string>gearparamrules.cs</string>
+  </recognizeSourceFiles>
+  <applySourceFiles>
+    <string>gearparamrules.cs</string>
+  </applySourceFiles>
+  <generationAfterNormal>Loop</generationAfterNormal>
+  <generationAfterChoice>Stop</generationAfterChoice>
+  <generationAfterCycleLimit>Stop</generationAfterCycleLimit>
+  <generationAfterNoRules>Stop</generationAfterNoRules>
+  <generationAfterTriggerRule>Stop</generationAfterTriggerRule>
+</ruleSet>

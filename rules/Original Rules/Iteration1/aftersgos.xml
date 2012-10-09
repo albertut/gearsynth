@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<grammarRule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <name>aftersgos -12</name>
+  <spanning>false</spanning>
+  <induced>false</induced>
+  <containsAllGlobalLabels>false</containsAllGlobalLabels>
+  <embeddingRules />
+  <recognizeFunctions />
+  <applyFunctions>
+    <string>gearspeedas</string>
+  </applyFunctions>
+  <L>
+    <globalLabels />
+    <globalVariables />
+    <nodes>
+      <node xsi:type="ruleNode">
+        <shapekey>rectangleNode.-2715310.70.20</shapekey>
+        <screenX>171</screenX>
+        <screenY>104</screenY>
+        <name>Gear</name>
+        <localLabels>
+          <string>gear1</string>
+          <string>speed</string>
+          <string>teeth</string>
+          <string>radius</string>
+          <string>new</string>
+        </localLabels>
+        <localVariables />
+        <containsAllLocalLabels>true</containsAllLocalLabels>
+        <strictDegreeMatch>false</strictDegreeMatch>
+      </node>
+    </nodes>
+    <arcs />
+  </L>
+  <R>
+    <globalLabels />
+    <globalVariables />
+    <nodes>
+      <node xsi:type="ruleNode">
+        <shapekey>rectangleNode.-2715310.70.20</shapekey>
+        <screenX>231</screenX>
+        <screenY>104</screenY>
+        <name>Gear</name>
+        <localLabels>
+          <string>gear</string>
+          <string>speed</string>
+          <string>teeth</string>
+          <string>radius</string>
+        </localLabels>
+        <localVariables />
+        <containsAllLocalLabels>false</containsAllLocalLabels>
+        <strictDegreeMatch>false</strictDegreeMatch>
+      </node>
+      <node xsi:type="ruleNode">
+        <shapekey>rectangleNode.-1.70.20</shapekey>
+        <screenX>223</screenX>
+        <screenY>181</screenY>
+        <name>Gear1</name>
+        <localLabels>
+          <string>gear</string>
+          <string>speed</string>
+          <string>teeth</string>
+          <string>radius</string>
+          <string>new</string>
+        </localLabels>
+        <localVariables>
+          <double>0</double>
+          <double>0</double>
+          <double>0</double>
+          <double>0</double>
+        </localVariables>
+        <containsAllLocalLabels>false</containsAllLocalLabels>
+        <strictDegreeMatch>false</strictDegreeMatch>
+      </node>
+    </nodes>
+    <arcs>
+      <arc xsi:type="ruleArc">
+        <name>a0</name>
+        <localLabels />
+        <localVariables />
+        <toConnector>0</toConnector>
+        <fromConnector>1</fromConnector>
+        <styleKey>Straight.-16777216.1.0</styleKey>
+        <directed>true</directed>
+        <doublyDirected>false</doublyDirected>
+        <From>Gear</From>
+        <To>Gear1</To>
+        <containsAllLocalLabels>false</containsAllLocalLabels>
+        <directionIsEqual>false</directionIsEqual>
+        <nullMeansNull>false</nullMeansNull>
+      </arc>
+    </arcs>
+  </R>
+</grammarRule>

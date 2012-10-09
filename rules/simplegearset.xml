@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ruleSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <name>completegearset</name>
+  <ruleFileNames>
+    <string>beginning rule1 -typeA.xml</string>
+    <string>beginning rule1 -typeB.xml</string>
+    <string>beginning rule2 -typeA.xml</string>
+    <string>beginning rule2 -typeB.xml</string>
+    <string>simple -typeA.xml</string>
+    <string>simple -typeB.xml</string>
+    <string>compound - typeBA.xml</string>
+    <string>compound - typeBB.xml</string>
+    <string>compound -typeAA.xml</string>
+    <string>compound -typeAB.xml</string>
+  </ruleFileNames>
+  <triggerRuleNum>-1</triggerRuleNum>
+  <choiceMethod>Design</choiceMethod>
+  <interimCandidates>Unspecified</interimCandidates>
+  <finalCandidates>Unspecified</finalCandidates>
+  <ruleSetIndex>0</ruleSetIndex>
+  <recognizeSourceFiles />
+  <applySourceFiles />
+  <generationAfterNormal>Loop</generationAfterNormal>
+  <generationAfterChoice>Stop</generationAfterChoice>
+  <generationAfterCycleLimit>Stop</generationAfterCycleLimit>
+  <generationAfterNoRules>Stop</generationAfterNoRules>
+  <generationAfterTriggerRule>Stop</generationAfterTriggerRule>
+</ruleSet>
